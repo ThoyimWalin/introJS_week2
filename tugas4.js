@@ -20,9 +20,13 @@ let data = {
 // clone object data ke object dataBaru dan memodifikasi value serta menambah key+value baru menggunakan spread operator
 const dataBaru = {
     ...data,
-    name: 'Thoyim Walin',
-    email: 'thoyimwalin25@gmail.com',
-    hobby: ['traveling', 'membaca', "bermusik"]
+    address: {
+        ...data.address,
+        name: 'Thoyim Walin',
+        email: 'thoyimwalin25@gmail.com',
+        hobby: ['traveling', 'membaca', "bermusik"]
+    }
+
 }
 // menampilkan data name, email, hobby dari object dataBaru
 console.log(dataBaru)
